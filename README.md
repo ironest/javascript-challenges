@@ -19,3 +19,7 @@ My Journey through Javascript; a repository used as collection of all my exercis
   * Objects: dot notation and bracket notation
   * Objects: add/remove/edit properties
   * Value vs Reference
+* [Challenge 05](./challenge_05)
+  * Capitalise the Front
+  * Functional programming
+  * Object-oriented programming
