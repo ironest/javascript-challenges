@@ -15,3 +15,7 @@ My Journey through Javascript; a repository used as collection of all my exercis
   * Classes
   * Object instantiation
   * GUI
+* [Challenge 04](./challenge_04)
+  * Objects: dot notation and bracket notation
+  * Objects: add/remove/edit properties
+  * Value vs Reference
