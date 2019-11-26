@@ -32,7 +32,6 @@ class Dog {
 
     walk(location, distance) {
         let walk = new Walk(location, distance);
-        walk.prototype
         this.walks.push(walk);
     }
 
