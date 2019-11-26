@@ -31,5 +31,5 @@ Create a function that will take a string as an argument. In this function, use 
 
 ## Beast Mode++
 *(exercise_04.js)*
-1. Create a basic GUI in the browser to interact with your classes. Use buttons, prompts and lists to create and display dogs (view example).
+1. Create a basic GUI in the browser to interact with your classes. Use buttons, prompts and lists to create and display dogs ([view example](https://coderacademyedu.github.io/resources/unit_js_classes/dog.html)).
 2. Add walks to the GUI. I.e. add a `New Walk` button to each dog and display their walks under their name.
