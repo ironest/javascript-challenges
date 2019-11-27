@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yahoo! weather</title>
+
+    <style>
+
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: #444;
+        }
+
+        .day-container,
+        .day-container * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .day-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        .day {
+            width: 150px;
+            margin: 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: space-between;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .day-name {
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px 20px 0 0;
+            background-color: rgb(255, 234, 182);
+        }
+
+        .day-forecast {
+            background-color: rgb(191, 255, 241);
+        }
+        .day-temp-min {
+            background-color: lightblue;
+        }
+        .day-temp-max {
+            background-color: rgb(255, 184, 155);
+            border-radius: 0 0 20px 20px;
+        }
+
+        .day-forecast,
+        .day-temp-min,
+        .day-temp-max {
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Yahoo! weather</h1>
+
+    <div class="day-container">
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+    
+        <div class="day">
+            <h2 class="day-name">Monday</h2>
+            <p class="day-forecast">Sunny</p>
+            <p class="day-temp-min">Min 19C</p>
+            <p class="day-temp-max">Max 25C</p>
+        </div>
+    
+    </div>
+
+    <script>
+        
+        function fahrenheitToCelcius(fahrenheit){
+            return Math.round((fahrenheit - 32) * 5 / 9);
+        }
+
+        function myFunction(weatherData) {
+            
+            let dayApi = weatherData.query.results.channel.item.forecast;
+            let dayDOM = document.querySelectorAll(".day");
+
+            for(let i = 0; i<7; i++){
+                let dayName = dayDOM[i].querySelector(".day-name");
+                let dayForecast = dayDOM[i].querySelector(".day-forecast");
+                let dayTempMin = dayDOM[i].querySelector(".day-temp-min");
+                let dayTempMax = dayDOM[i].querySelector(".day-temp-max");
+            
+                dayName.innerHTML = dayApi[i].day;
+                dayForecast.innerHTML = dayApi[i].text;
+                dayTempMin.innerHTML = "Min: " + fahrenheitToCelcius(dayApi[i].low) + "&deg;C";
+                dayTempMax.innerHTML = "Max: " + fahrenheitToCelcius(dayApi[i].high) + "&deg;C";
+
+            }
+        
+        }
+            
+        </script>
+
+    <script src="http://www.mocky.io/v2/5dde54e731000055003ae0cf?callback=myFunction"></script>
+
+</body>
+</html>
