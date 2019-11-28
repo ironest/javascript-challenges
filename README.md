@@ -23,3 +23,12 @@ My Journey through Javascript; a repository used as collection of all my exercis
   * Capitalise the Front
   * Functional programming
   * Object-oriented programming
+* [Challenge 06](./challenge_06)
+  * JSON.parse
+  * Functional programming
+  * JSONP API consumption
+* [Challenge 07](./challenge_07)
+  * The Argument Object
+  * Rest parameters
+  * XMLHttpRequest
+  * DOM Manipulation
