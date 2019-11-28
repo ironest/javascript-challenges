@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Callbacks & JSON</title>
+  </head>
+  <body>
+    <p>Check the console</p>
+
+    <input type="button" value="add user">
+
+    <ul class="user-list"></ul>
+
+    <script>
+
+      parseRandomUser = (data) => {
+
+        let user = JSON.parse(data).results[0].name;
+        console.log(user.title + " " + user.first + " " + user.last);
+        
+        ulElement = document.querySelector(".user-list");
+        
+        newLi = document.createElement("li");
+        newLi.innerHTML = user.title + " " + user.first + " " + user.last;
+
+        ulElement.appendChild(newLi);
+        
+      };
+
+      getRandomUser = (callback) => {
+        // This function uses AJAX to hit the random user API.
+        // More info: https://randomuser.me
+
+        var request = new XMLHttpRequest();
+        request.open("GET", "https://randomuser.me/api/", true);
+        request.onload = function() {
+          /* You'll start here */
+          //console.log(JSON.parse(request.response));
+          try {
+            callback(request.response);
+          } catch {
+            console.log("something went wrong");
+          }
+
+        };
+
+        request.send();
+      };
+
+      //getRandomUser(parseRandomUser); // Execute the function
+
+      addUserBtn = document.querySelector("input[type=button]");
+      addUserBtn.addEventListener("click", (event)=> {
+        event.preventDefault();
+        getRandomUser(parseRandomUser);
+      });
+
+    </script>
+  </body>
+</html>
