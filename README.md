@@ -32,3 +32,8 @@ My Journey through Javascript; a repository used as collection of all my exercis
   * Rest parameters
   * XMLHttpRequest
   * DOM Manipulation
+* [Challenge 08](./challenge_08)
+  * CORS
+  * Ajax - Jquery
+  * Fetch
+  * Get, Post, Delete methods
