@@ -40,13 +40,15 @@
         function addTweets(tweets, color){
 
             let list = document.getElementById("list");
+
+            list.innerHTML = "";
                 
-                tweets.forEach(element => {
-                    let li = document.createElement("li");
-                    li.style.color = color;
-                    li.innerHTML = `ID: ${element.id} ${element.message}`;
-                    list.appendChild(li);
-                });
+            tweets.forEach(element => {
+                let li = document.createElement("li");
+                li.style.color = color;
+                li.innerHTML = `ID: ${element.id} ${element.message}`;
+                list.appendChild(li);
+            });
 
         }
 
