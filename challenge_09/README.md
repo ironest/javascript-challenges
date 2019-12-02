@@ -9,7 +9,7 @@ Provided by Coder Academy: [source](https://coderacademyedu.github.io/resources/
 2. The code is currently using XMLHttpRequest. Update the code to use Fetch instead. You'll be working with Promises! Pro tip: you should only need to modify the getRandomUser function. Don't forget error handling :)
 
 ## Beast Mode
-*(exercise_02.html)*
+*(delay.html)*
 
 Create your own Promise! [Instructions](https://coderacademyedu.github.io/resources/delay.html.zip).
 
