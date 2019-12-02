@@ -37,3 +37,7 @@ My Journey through Javascript; a repository used as collection of all my exercis
   * Ajax - Jquery
   * Fetch
   * Get, Post, Delete methods
+* [Challenge 09](./challenge_08)
+  * XHR
+  * Promise
+  * Async / Await
