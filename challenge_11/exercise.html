@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <h1>Welcome!</h1>
+    <div>
+      <img src="https://picsum.photos/600/400?image=0" />
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin condimentum
+      viverra ipsum eu eleifend. Donec tortor risus, auctor nec ultrices id,
+      cursus vitae orci. Phasellus lacinia vulputate suscipit. In nec elit in
+      justo pretium ultrices. Aliquam convallis maximus nisi. Nunc tempor erat a
+      ultricies bibendum. Nam quis massa eget odio mollis consectetur non ut
+      purus. Quisque consequat urna volutpat eros placerat pellentesque.
+      Phasellus non nisi in nisi dignissim dignissim in eu dolor. Curabitur
+      vulputate elit nec cursus ullamcorper. Nulla ac eleifend ante, at semper
+      mauris. Quisque tincidunt mattis turpis, vel molestie ipsum pulvinar et.
+      Aenean quis ex imperdiet nunc porta mollis sit amet in eros.
+    </p>
+    <button id="changeImage">Change Image</button>
+    <input type="color" id="colorPicker">
+    <input type="text" id="changeHeader">
+
+    <!-- Add your controls under here -->
+    <script>
+      function randNumber() {
+        return Math.floor(Math.random() * 1080);
+      }
+      //Add your code under here
+
+      mainImage = document.querySelector("img");
+      baseImgUrl = "https://picsum.photos/600/400?image=";
+
+      document.querySelector("#changeImage").addEventListener("click", ()=>{
+        mainImage.setAttribute("src", baseImgUrl + randNumber());
+      });
+
+      mainP = document.querySelector("p");
+      document.querySelector("#colorPicker").addEventListener("change", (event)=>{
+        mainP.style.color = event.target.value;
+      });
+
+      mainHeader = document.querySelector("h1");
+      document.querySelector("#changeHeader").addEventListener("input", (event)=>{
+
+        if(event.target.value)
+            mainHeader.innerHTML = event.target.value;
+        else
+            mainHeader.innerHTML = "Welcome!";
+
+        });
+
+
+    </script>
+  </body>
+</html>
