@@ -37,7 +37,14 @@ My Journey through Javascript; a repository used as collection of all my exercis
   * Ajax - Jquery
   * Fetch
   * Get, Post, Delete methods
-* [Challenge 09](./challenge_08)
+* [Challenge 09](./challenge_09)
   * XHR
   * Promise
   * Async / Await
+* [Challenge 10](./challenge_10)
+  * Array Methods Review
+  * DOM Manipulation
+  * Data Persistancy (on hold)
+* [Challenge 11](./challenge_11)
+  * DOM Manipulation
+  * Cookies (on hold)
