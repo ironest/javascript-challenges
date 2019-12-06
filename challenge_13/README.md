@@ -3,7 +3,7 @@
 Provided by Coder Academy: [source](https://coderacademyedu.github.io/resources/unit_cli_tool.html)
 
 ## Challenge
-*app.js* & *students.js*
+*contacts/*
 
 1. Create a new project called 'contacts'.
 2. Inside 'contacts', create an app.js file, set the contents to:
@@ -15,7 +15,7 @@ Provided by Coder Academy: [source](https://coderacademyedu.github.io/resources/
 7. Display the information back to the user on screen. Use the Chalk package to make it look cool.
 
 ## Beast Mode
-*app.js* & *students.js*
+*contacts/*
 
 1. We can automatically restart the server when the code changes. Install [Nodemon](https://www.npmjs.com/package/nodemon) globally and then use it to run your code
 `npm install -g nodemon`
