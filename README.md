@@ -48,3 +48,6 @@ My Journey through Javascript; a repository used as collection of all my exercis
 * [Challenge 11](./challenge_11)
   * DOM Manipulation
   * Cookies (on hold)
+* [Challenge 12](./challenge_12)
+  * Introduction to Node
+  * Exporting Modules
