@@ -57,3 +57,6 @@ My Journey through Javascript; a repository used as collection of all my exercis
 * [Challenge 20](./challenge_20)
   * Review of basic JS
   * Parameter Validation
+* [Challenge 22](./challenge_22)
+  * Api Consumption
+  * JSON data navigation
