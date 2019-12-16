@@ -51,3 +51,6 @@ My Journey through Javascript; a repository used as collection of all my exercis
 * [Challenge 12](./challenge_12)
   * Introduction to Node
   * Exporting Modules
+* [Challenge 20](./challenge_20)
+  * Review of basic JS
+  * Parameter Validation
