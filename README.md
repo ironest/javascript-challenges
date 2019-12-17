@@ -51,6 +51,9 @@ My Journey through Javascript; a repository used as collection of all my exercis
 * [Challenge 12](./challenge_12)
   * Introduction to Node
   * Exporting Modules
+* [Challenge 17](./challenge_17)
+  * Review of loops and array
+  * Review of template literals
 * [Challenge 20](./challenge_20)
   * Review of basic JS
   * Parameter Validation
